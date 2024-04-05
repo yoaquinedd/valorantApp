@@ -1,0 +1,14 @@
+<p-panel>
+  <h1>
+    <strong>Agentes de Valorant</strong>
+  </h1>
+  
+</p-panel>
+
+<div class="grid mt-2 ">
+  <div
+    *ngFor="let agent of agents"
+    class="col-12 md:col-2">
+    <agents-agent-card [agent]="agent"></agents-agent-card>
+  </div>
+</div>

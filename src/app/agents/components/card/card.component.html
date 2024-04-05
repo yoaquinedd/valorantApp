@@ -1,0 +1,10 @@
+
+<p-card [header]="agent.displayName" [subheader]="agent.role.displayName">
+  <ng-template pTemplate="header">
+    <img [src]="agent.displayIconSmall" [alt]="agent.displayName" >
+  </ng-template>
+  <p>
+    {{agent.description}}
+  </p>
+  <p-button (onClick)="seeMoreButton(agent.uuid)">Ver mas</p-button>
+</p-card>
