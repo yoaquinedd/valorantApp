@@ -1,0 +1,9 @@
+<p-panel header="Información del Agente">
+  <ng-container *ngIf="agent">
+    <h1>{{ agent.developerName }}</h1>
+    <!-- Agrega aquí más detalles del agente que quieras mostrar -->
+  </ng-container>
+  <ng-container *ngIf="!agent">
+    <p>No se pudo encontrar información del agente.</p>
+  </ng-container>
+</p-panel>

@@ -6,5 +6,7 @@
   <p>
     {{agent.description}}
   </p>
-  <p-button (onClick)="seeMoreButton(agent.uuid)">Ver mas</p-button>
+  <p-button
+    [routerLink]="['/agents',agent.uuid]"
+    >Ver mas</p-button>
 </p-card>
